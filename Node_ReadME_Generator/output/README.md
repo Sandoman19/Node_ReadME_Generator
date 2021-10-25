@@ -13,7 +13,10 @@ This project was built to help standardise the way i do ReadME's. Once this has 
 ## Installation
 To install dependencies, run the following:
 `
-run nmp install and follow the prompts. once nmp has been install enter node index.js and follow the question
+run npm install
+follow the prompts. 
+once npm has been install enter node index.js 
+follow the question
 `
 ## Usage
 Use this project to make a standardised and easy to follow ReadME.
@@ -22,7 +25,7 @@ This repository is licensed under the MIT license.
 ## Contributing
 Aaron Sando.
 ## Tests
-To run tests, run the following:
+Are there tests on the projects:
 `
 false
 `

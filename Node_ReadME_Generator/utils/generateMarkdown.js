@@ -3,7 +3,7 @@ function generateMarkdown(data) {
 
   // return markdown content
   return `# ${data.projectTitle}
-![alt text ](https://img.shields.io/badge/License-${data.license}-yellow)
+![licenseBadge](https://img.shields.io/badge/License-${data.license}-yellow)
 ${data.licenseBadge || ''}
 ## Description
 ${data.description || ''}${data.descriptionWhy || ''} ${data.descriptionWhat || ''} ${data.descriptionLearn || ''}
@@ -26,12 +26,13 @@ This repository is licensed under the ${data.license} license.
 ## Contributing
 ${data.contribute}
 ## Tests
-To run tests, run the following:
+Are there tests on the projects:
 \`
 ${data.tests}
 \`
 ## Questions
-Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). View more of my work in GitHub at [${data.username}](https://github.com/${data.username}) 
+Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). 
+View more of my work in GitHub at [${data.username}](https://github.com/${data.username}) 
 `;
 }
 

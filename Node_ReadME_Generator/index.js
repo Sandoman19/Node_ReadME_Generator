@@ -5,6 +5,7 @@ const generateMd = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// function to make input required
 function makeRequiredFieldValidator(fieldname){
 
   return function (input, answers) {
@@ -16,7 +17,7 @@ function makeRequiredFieldValidator(fieldname){
   }
 }
 
-
+// questions
 const questions = [
   {
     type: "input",
@@ -29,6 +30,7 @@ const questions = [
     message: "Would you like a description guide?",
     name: "needGuide",
   },  
+  // only show if "Would you like a description guide?" in entered as Y
   {
     type: "input",
     message: "Why did you build this project?",
@@ -56,15 +58,16 @@ const questions = [
       return answers.needGuide;
     }
   },
-  {
-    type: "input",
-    message: "Please enter a basic description of your project",
-    name: "description",
-    validate: makeRequiredFieldValidator("a description"),
-    when: function(answers){
-      return !answers.needGuide;
-    }
-  },
+    // only show if "Would you like a description guide?" in entered as N
+    {
+      type: "input",
+      message: "Please enter a basic description of your project",
+      name: "description",
+      validate: makeRequiredFieldValidator("a description"),
+      when: function(answers){
+        return !answers.needGuide;
+      }
+    },
   {
     type: "input",
     message: "Describe the installation process if any: ",
@@ -119,7 +122,7 @@ const questions = [
 // function to prompt user - returns answers object
 const promptUser = () => {
   return inquirer
-      .prompt(questions);
+    .prompt(questions);
 }
 
 // function to write README file
@@ -130,20 +133,21 @@ const writeToFile = (fileName, data) => {
 const init = async () => {
   try {
     console.log("Welcome to the README generator.\nPlease answer the following questions:")
-    // ask user for answers to questions
+    // ask questions
     const answers = await promptUser();
-    // create markdown content from user answers
+    // create markdown from user answers
     const fileContent = generateMd(answers);
-    // write markdown content to README.md file
+    // write file to
     await writeToFile("./output/README.md", fileContent);
     // notify user that file has been written
-    console.log("README.md created in output folder.");
+    console.log("README.md created 😊");
 
   } catch (err) {
-    console.error("Error creating README. File not created.");
+    // notify user that file did not create
+    console.error("Error creating README. File not created 😞");
     console.log(err);
   }
 }
 
-// Function call to initialize app
+// initialize
 init();
