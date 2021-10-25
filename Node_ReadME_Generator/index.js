@@ -76,9 +76,9 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is this project used for?",
+    message: "How is the project used, images from the assets/images/ will also be added",
     validate: makeRequiredFieldValidator("an input"),
-    name: "used",
+    name: "usage",
   },
   {
     type: "list",

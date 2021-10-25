@@ -20,7 +20,10 @@ To install dependencies, run the following:
 ${data.installation}
 \`
 ## Usage
-${data.used}
+${data.usage}
+![screenshot1](assets/images/screenshot1.png)
+![screenshot2](assets/images/screenshot2.png)
+![screenshot3](assets/images/screenshot3.png)
 ## License
 This repository is licensed under the ${data.license} license.
 ## Contributing
