@@ -1,9 +1,15 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-
+  //add colour background to the diffrent licenses
+  const licenseColour = {
+    "MIT": "yellow",
+    "APACHE 2.0": "red", 
+    "GPL 3.0": "blue", 
+    "BSD 3": "green",
+  }
   // return markdown content
   return `# ${data.projectTitle}
-![licenseBadge](https://img.shields.io/badge/License-${data.license}-yellow)
+![licenseBadge](https://img.shields.io/badge/License-${data.license}-${licenseColour[data.license]})
 ${data.licenseBadge || ''}
 ## Description
 ${data.description || ''}${data.descriptionWhy || ''} ${data.descriptionWhat || ''} ${data.descriptionLearn || ''}
