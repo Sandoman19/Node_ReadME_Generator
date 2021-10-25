@@ -76,7 +76,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "How is the project used, images from the assets/images/ will also be added",
+    message: "How is the project used, images from the assets/images/ will also be",
     validate: makeRequiredFieldValidator("an input"),
     name: "usage",
   },

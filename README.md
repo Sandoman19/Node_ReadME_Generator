@@ -1,11 +1,11 @@
 # Node.js ReadME Generator
-![alt text ](https://img.shields.io/badge/License-MIT-yellow)
+![licenseBadge](https://img.shields.io/badge/License-MIT-yellow)
 
 ## Description
-This project was built to help standardise the way i do ReadME's. Once this has been finished i hope i will not forget anything. While making this i realized how easy node.js really is.
+This project was built to help standardise the way i do a ReadME. Once this has been finished I hope I will not forget anything. While making this I realized how easy Node.js really is.
 ## Table of Contents
 * [Installation](#installation)
-* [Usage](#usage)
+* [Usage](#used)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -13,18 +13,24 @@ This project was built to help standardise the way i do ReadME's. Once this has 
 ## Installation
 To install dependencies, run the following:
 `
-run nmp install and follow the prompts. once nmp has been install enter node index.js and follow the question
+Run index.js with node or integrated terminal,
+enter npm install,
+follow any prompts,
+enter node index.js,
+answer all questions.
 `
 ## Usage
-Use this project to make a standardised and easy to follow ReadME.
+watch video for how to use.
+![screenshot1](assets/images/screenshot1.png)
 ## License
 This repository is licensed under the MIT license.
 ## Contributing
-Aaron Sando.
+Aaron
 ## Tests
-To run tests, run the following:
+Are there tests on the projects:
 `
 false
 `
 ## Questions
-Questions about this repository? Please contact me at [Aaron@charactergroup.com.au](mailto:Aaron@charactergroup.com.au). View more of my work in GitHub at [Sandoman19](https://github.com/Sandoman19) 
+Questions about this repository? Please contact me at [Aaron@charactergroup.com.au](mailto:Aaron@charactergroup.com.au). 
+View more of my work in GitHub at [Sandoman19](https://github.com/Sandoman19) 
